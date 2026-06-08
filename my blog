@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu blog</title>
+    <style>
+       
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        header {
+            background-color:#dfd32d;
+            border: 3px solid #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .post {
+            color: #1a202c;
+            line-height: 1.6;
+        }
+
+        .post h2 {
+            color: #1a365d;
+            font-size: 2rem;
+            margin: 0 0 15px 0;
+        }
+
+        .post .author {
+            color: #4a5568;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .post .content {
+            font-size: 1.1rem;
+            color: #2d3748;
+        }
+
+        img {
+             width: 100px;
+             height: 100px;
+        }
+
+    </style>
+   
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Meu blog</h1>
+            <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        </header>
+
+ 
+        <article class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGEc9GpLyX24NHMJWDmIVQBBdRd49cgtIKg&s" alt="Persona 4 Golden">
+            <h2>Meu primeiro post</h2>
+            <div class="author">Por: Kauan Palma</div>
+            <p class="content">
+                Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas relacionadas a Persona 4 Golden.
+            </p>
+        </article>
+    </div>
