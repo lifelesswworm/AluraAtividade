@@ -3,89 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu blog</title>
+    <title>Meu blog - Persona 4 Golden</title>
     <style>
-       
         body {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #ffffff;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
         }
-
-        .container {
+     
+        header {
+            background-color: #dfd32d; /* Cor amarela do segundo código */
+            color: #000000;            /* Texto escuro para contrastar melhor com o amarelo */
             width: 100%;
             max-width: 800px;
-        }
-
-        header {
-            background-color:#dfd32d;
-            border: 3px solid #000000;
-            color: #ffffff;
+            padding: 40px 20px;
+            box-sizing: border-box;
             text-align: center;
-            padding: 30px 20px;
-            margin-bottom: 30px;
+            border: 4px solid #000000;
         }
 
         header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.5rem;
+            margin: 0;
+            font-size: 48px;
             font-weight: bold;
         }
 
         header p {
-            margin: 0;
-            font-size: 1.1rem;
+            margin-top: 20px;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: lighter;
+        }
+
+        .banner-img {
+            width: 100%;
+            max-width: 700px;
+            height: 250px;
+            object-fit: contain;
+            background-color: #ffffff;
+            border-radius: 4px;
+            border: 1px solid #000;
+        }
+
+        main {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 800px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            margin-top: 20px;
         }
 
         .post {
-            color: #1a202c;
-            line-height: 1.6;
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
         }
 
-        .post h2 {
-            color: #1a365d;
-            font-size: 2rem;
-            margin: 0 0 15px 0;
+        .post-header-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
         }
 
-        .post .author {
-            color: #4a5568;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
+        .post-img {
+            width: 100px; /* Ajustado para os 100px do segundo código */
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #ddd;
         }
 
-        .post .content {
-            font-size: 1.1rem;
-            color: #2d3748;
+        .post-title-area {
+            display: flex;
+            flex-direction: column;
         }
 
-        img {
-             width: 100px;
-             height: 100px;
+        h2 {
+            color: #1a365d; /* Azul escuro do segundo código */
+            font-size: 32px;
+            margin: 0;
         }
 
+        .author {
+            color: #4a5568; /* Cinza do segundo código */
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0 0 0;
+        }
+
+        .content {
+            color: #2d3748; /* Cor de texto do segundo código */
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .interactions {
+            display: flex;
+            gap: 15px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding-top: 15px;
+        }
+
+        .btn-interact {
+            background-color: #f9f9f9;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-family: inherit;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .btn-interact:hover {
+            background-color: #eeeeee;
+        }
+
+        .btn-interact.active-like {
+            background-color: #673ab7;
+            color: #ffffff;
+            border-color: #673ab7;
+        }
+
+        .btn-interact.active-fav {
+            background-color: #333333;
+            color: #ffffff;
+            border-color: #333333;
+        }
     </style>
-   
 </head>
 <body>
 
-    <div class="container">
+    <header>
+        <h1>Meu blog 📺</h1>
+        <p>Vou compartilhar conhecimentos sobre Persona 4 Golden</p>
+        <img class="banner-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGEc9GpLyX24NHMJWDmIVQBBdRd49cgtIKg&s" alt="Persona 4 Golden">
+    </header>
 
-        <header>
-            <h1>Meu blog</h1>
-            <p>Vou compartilhar conhecimentos sobre Persona 4 Golden</p>
-        </header>
+    <main>
+        <div class="post">
+            <div class="post-header-container">
+                <img class="post-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGEc9GpLyX24NHMJWDmIVQBBdRd49cgtIKg&s" alt="Persona 4 Golden">
+                <div class="post-title-area">
+                    <h2>Meu primeiro post</h2>
+                    <p class="author">Por: Kauan Palma</p>
+                </div>
+            </div>
+            
+            <div class="content">
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas relacionadas a Persona 4 Golden.</p>
+            </div>
+            
+            <div class="interactions">
+                <button class="btn-interact" data-type="like" onclick="toggleInteraction(this)">
+                    💜 Gostei (<span>0</span>)
+                </button>
+                <button class="btn-interact" data-type="dislike" onclick="toggleInteraction(this)">
+                    👎 Não gostei (<span>0</span>)
+                </button>
+            </div>
+        </div>
+    </main>
 
- 
-        <article class="post">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGEc9GpLyX24NHMJWDmIVQBBdRd49cgtIKg&s" alt="Persona 4 Golden">
-            <h2>Meu primeiro post</h2>
-            <div class="author">Por: Kauan Palma</div>
-            <p class="content">
-                Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas relacionadas a Persona 4 Golden.
-            </p>
-        </article>
-    </div>
+    <script>
+        // Função dinâmica para controlar as curtidas e descurtidas de qualquer post
+        function toggleInteraction(button) {
+            const counterSpan = button.querySelector('span');
+            const type = button.getAttribute('data-type');
+            
+            if (type === 'like') {
+                if (!button.classList.contains('active-like')) {
+                    counterSpan.textContent = '1';
+                    button.classList.add('active-like');
+                } else {
+                    counterSpan.textContent = '0';
+                    button.classList.remove('active-like');
+                }
+            } else if (type === 'dislike') {
+                if (!button.classList.contains('active-fav')) {
+                    counterSpan.textContent = '1';
+                    button.classList.add('active-fav');
+                } else {
+                    counterSpan.textContent = '0';
+                    button.classList.remove('active-fav');
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
