@@ -16,8 +16,8 @@
         }
      
         header {
-            background-color: #dfd32d; /* Cor amarela do segundo código */
-            color: #000000;            /* Texto escuro para contrastar melhor com o amarelo */
+            background-color: #dfd32d; 
+            color: #000000;            
             width: 100%;
             max-width: 800px;
             padding: 40px 20px;
@@ -76,7 +76,7 @@
         }
 
         .post-img {
-            width: 100px; /* Ajustado para os 100px do segundo código */
+            width: 100px; 
             height: 100px;
             object-fit: cover;
             border-radius: 4px;
@@ -91,20 +91,20 @@
         }
 
         h2 {
-            color: #1a365d; /* Azul escuro do segundo código */
+            color: #1a365d; 
             font-size: 32px;
             margin: 0;
         }
 
         .author {
-            color: #4a5568; /* Cinza do segundo código */
+            color: #4a5568; 
             font-size: 18px;
             font-weight: bold;
             margin: 5px 0 0 0;
         }
 
         .content {
-            color: #2d3748; /* Cor de texto do segundo código */
+            color: #2d3748; 
             font-size: 20px;
             line-height: 1.5;
             margin-bottom: 20px;
@@ -170,17 +170,39 @@
             
             <div class="interactions">
                 <button class="btn-interact" data-type="like" onclick="toggleInteraction(this)">
-                    💜 Gostei (<span>0</span>)
+                    💛 Poggers (<span>0</span>)
                 </button>
                 <button class="btn-interact" data-type="dislike" onclick="toggleInteraction(this)">
-                    👎 Não gostei (<span>0</span>)
+                    👎 Noggers (<span>0</span>)
+                </button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header-container">
+                <img class="post-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGEc9GpLyX24NHMJWDmIVQBBdRd49cgtIKg&s" alt="Velvet Room Icon">
+                <div class="post-title-area">
+                    <h2>A Importância da Velvet Room</h2>
+                    <p class="author">Por: Kauan Palma</p>
+                </div>
+            </div>
+            
+            <div class="content">
+                <p>Para se dar bem nas dungeons de Inaba, você não pode se apegar apenas aos Personas iniciais. Visitar a Velvet Room e fazer fusões constantemente é o segredo para conseguir habilidades mais fortes e cobrir as fraquezas elementares da sua equipe!</p>
+            </div>
+            
+            <div class="interactions">
+                <button class="btn-interact" data-type="like" onclick="toggleInteraction(this)">
+                    💛 Poggers (<span>0</span>)
+                </button>
+                <button class="btn-interact" data-type="dislike" onclick="toggleInteraction(this)">
+                    👎 Noggers (<span>0</span>)
                 </button>
             </div>
         </div>
     </main>
 
     <script>
-        // Função dinâmica para controlar as curtidas e descurtidas de qualquer post
         function toggleInteraction(button) {
             const counterSpan = button.querySelector('span');
             const type = button.getAttribute('data-type');
